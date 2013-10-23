@@ -1,0 +1,158 @@
+<?xml version="1.0" standalone="yes"?>
+<dsSettings xmlns="http://tempuri.org/dsSettings.xsd">
+  <xs:schema id="dsSettings" targetNamespace="http://tempuri.org/dsSettings.xsd" xmlns:mstns="http://tempuri.org/dsSettings.xsd" xmlns="http://tempuri.org/dsSettings.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="dsSettings" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Sites">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Method" type="xs:string" minOccurs="0" />
+                <xs:element name="Site" type="xs:string" minOccurs="0" />
+                <xs:element name="ScanRate" type="xs:long" default="60" minOccurs="0" />
+                <xs:element name="SQL_Server" type="xs:string" minOccurs="0" />
+                <xs:element name="SQL_Account" type="xs:string" minOccurs="0" />
+                <xs:element name="SQL_Password" type="xs:string" minOccurs="0" />
+                <xs:element name="SQL_Database" type="xs:string" minOccurs="0" />
+                <xs:element name="ServiceURL" type="xs:string" minOccurs="0" />
+                <xs:element name="SAK" type="xs:string" minOccurs="0" />
+                <xs:element name="SiteID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="UID" type="xs:string" minOccurs="0" />
+                <xs:element name="PWD" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultInitiator" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultOwner" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Notifications">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Method" type="xs:string" minOccurs="0" />
+                <xs:element name="Site" type="xs:string" minOccurs="0" />
+                <xs:element name="ScanRate" type="xs:long" default="60" minOccurs="0" />
+                <xs:element name="SQL_Server" type="xs:string" minOccurs="0" />
+                <xs:element name="SQL_Account" type="xs:string" minOccurs="0" />
+                <xs:element name="SQL_Password" type="xs:string" minOccurs="0" />
+                <xs:element name="SQL_Database" type="xs:string" minOccurs="0" />
+                <xs:element name="Mail_Server" type="xs:string" minOccurs="0" />
+                <xs:element name="Mail_From" type="xs:string" minOccurs="0" />
+                <xs:element name="Mail_Subject" type="xs:string" minOccurs="0" />
+                <xs:element name="Mail_Body" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Archives">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ScanRate" type="xs:long" default="60" minOccurs="0" />
+                <xs:element name="WSURL" msdata:Caption="SQL_Server" type="xs:string" minOccurs="0" />
+                <xs:element name="WSSAK" msdata:Caption="SQL_Account" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ImportFiles">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Method" type="xs:string" minOccurs="0" />
+                <xs:element name="Site" type="xs:string" minOccurs="0" />
+                <xs:element name="SQL_Server" type="xs:string" minOccurs="0" />
+                <xs:element name="SQL_Database" type="xs:string" minOccurs="0" />
+                <xs:element name="SQL_Password" type="xs:string" minOccurs="0" />
+                <xs:element name="SQL_Account" type="xs:string" minOccurs="0" />
+                <xs:element name="SAK" type="xs:string" minOccurs="0" />
+                <xs:element name="ServiceURL" type="xs:string" minOccurs="0" />
+                <xs:element name="SourcePath" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="FileAging">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Directory" type="xs:string" minOccurs="0" />
+                <xs:element name="Interval" type="xs:decimal" minOccurs="0" />
+                <xs:element name="IncludeSub" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Retain" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="IntegrationSiteInfo">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="SISID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="Method" type="xs:string" minOccurs="0" />
+                <xs:element name="Site" type="xs:string" minOccurs="0" />
+                <xs:element name="Job_Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Input_Path" type="xs:string" minOccurs="0" />
+                <xs:element name="WSURL" type="xs:string" minOccurs="0" />
+                <xs:element name="WSSAK" type="xs:string" minOccurs="0" />
+                <xs:element name="Output_Path" type="xs:string" minOccurs="0" />
+                <xs:element name="Mail_Server" type="xs:string" default="" minOccurs="0" />
+                <xs:element name="Mail_From" type="xs:string" minOccurs="0" />
+                <xs:element name="Mail_Subject" type="xs:string" minOccurs="0" />
+                <xs:element name="Mail_Body" type="xs:string" minOccurs="0" />
+                <xs:element name="TZOFFSET" type="xs:string" default="0" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="IntegrationFieldMapping">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="SISID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="Field" msdata:Caption="Site" type="xs:string" minOccurs="0" />
+                <xs:element name="Mapping" msdata:Caption="Method" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="EmailNotifications">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ScanRate" type="xs:long" default="60" minOccurs="0" />
+                <xs:element name="WSURL" msdata:Caption="SQL_Server" type="xs:string" minOccurs="0" />
+                <xs:element name="WSSAK" msdata:Caption="SQL_Account" type="xs:string" minOccurs="0" />
+                <xs:element name="Site" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="HeartBeat">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ScanRate" type="xs:long" default="60" minOccurs="0" />
+                <xs:element name="Emails" type="xs:string" minOccurs="0" />
+                <xs:element name="Mail_Server" type="xs:string" minOccurs="0" />
+                <xs:element name="Mail_From" type="xs:string" minOccurs="0" />
+                <xs:element name="Mail_Subject" type="xs:string" minOccurs="0" />
+                <xs:element name="Mail_Body" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="HeartBeatSites">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="WSURL" msdata:Caption="SQL_Server" type="xs:string" minOccurs="0" />
+                <xs:element name="WSSAK" msdata:Caption="SQL_Account" type="xs:string" minOccurs="0" />
+                <xs:element name="HealthFolder" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1">
+        <xs:selector xpath=".//mstns:IntegrationSiteInfo" />
+        <xs:field xpath="mstns:SISID" />
+      </xs:unique>
+      <xs:unique name="IntegrationFieldMapping_Constraint1" msdata:ConstraintName="Constraint1">
+        <xs:selector xpath=".//mstns:IntegrationFieldMapping" />
+        <xs:field xpath="mstns:SISID" />
+        <xs:field xpath="mstns:Field" />
+        <xs:field xpath="mstns:Mapping" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+   <EmailNotifications>
+    <ScanRate>60</ScanRate>
+    <WSURL>http://lbusch3web01/symphonyv62</WSURL>
+    <WSSAK>7C9472F3-DC00-429F-B436-96A5B5697D83</WSSAK>
+    <Site>NY</Site>
+  </EmailNotifications>
+</dsSettings>
